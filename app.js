@@ -20,10 +20,10 @@ app.use(router);
 
 const port = process.env.PORT || 8000;
 
-// for deployment
-if(process.env.NODE_ENV === "production"){
-    app.use(express.static("client/build"))
-}
+// // for deployment
+// if(process.env.NODE_ENV === "production"){
+//     app.use(express.static("client/build"))
+// }
 
 app.listen(port,()=>{
     console.log(`server is running on port number ${port}`);
